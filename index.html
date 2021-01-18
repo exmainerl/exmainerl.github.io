@@ -1,115 +1,197 @@
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
+<meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>菜鸡虾米的事故现场</title>
-<link rel="shortcut icon" href="https://exmainerl.github.io/favicon.ico?v=1610865180730">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<title>
+    菜鸡Jells的事故现场
+</title>
+<link rel="shortcut icon" href="https://exmainerl.github.io/favicon.ico?v=1610949343207">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://exmainerl.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="菜鸡虾米的事故现场 - Atom Feed" href="https://exmainerl.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://exmainerl.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
+</head>
 
-    <meta name="description" content="语文不上95不改签名！！！" />
-  </head>
-  <body>
+<body>
     <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://exmainerl.github.io">
-  <img class="avatar" src="https://exmainerl.github.io/images/avatar.png?v=1610865180730" alt="">
-  </a>
-  <h1 class="site-title">
-    菜鸡虾米的事故现场
-  </h1>
-  <p class="site-description">
-    语文不上95不改签名！！！
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://exmainerl.github.io/post/liu-yan-ban/">
-        <h2 class="post-title">留言板</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2021-01-17
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-        <a href="https://exmainerl.github.io/post/liu-yan-ban/" class="post-feature-image" style="background-image: url('https://exmainerl.github.io/post-images/liu-yan-ban.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-</div>
-
-    
-        <div class="pagination-container">
-  
-  
-</div>
-
-    
-        <div class="site-footer">
-  耶斯莫拉
-  <a class="rss" href="https://exmainerl.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
-      </div>
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://exmainerl.github.io">
+                <img class="avatar" src="https://exmainerl.github.io/images/avatar.png?v=1610949343207" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    菜鸡Jells的事故现场
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
     </div>
-  </body>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+        
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://exmainerl.github.io/post/liu-yan-ban/">
+                        留言板
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2021-01-17</time>
+                    
+                </div>
+                <div class="post-article">
+                    
+                        <a href="https://exmainerl.github.io/post/liu-yan-ban/" class="post-feature-image" style="background-image:url(https://exmainerl.github.io/post-images/liu-yan-ban.jpg) ">
+                        </a>
+                        
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            RT，如果有什么要对我说的请在下面留言，我不定期会看。
+如果是同学的话会优先一点。
+（说句闲话，我微信又双叒叕被封了）
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://exmainerl.github.io/post/liu-yan-ban/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
+
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://exmainerl.github.io/images/avatar.png?v=1610949343207)">
+        </div>
+        <h1 class="id_card-title">
+            菜鸡Jells的事故现场
+        </h1>
+        <h2 class="id_card-description">
+            语文不上95不改签名！！！
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
+
+        </div>
+    </div>
+    
+
+                        <!-- 公告栏 -->
+                        
+    <div class="notice-card i-card ">
+        <div class="notice-title i-card-title">公告</div>
+        <div class="notice-content">
+            有啥事留言板里找我，我会不定期看。
+要是特别急的话就去洛谷私信【Jells】吧！
+        </div>
+    </div>
+    
+
+                </div>
+            </div>
+
+
+
+            <div class="site-footer">
+  耶斯莫拉 | 
+  <a class="rss" href="https://exmainerl.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+</body>
+
 </html>
